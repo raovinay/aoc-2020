@@ -29,13 +29,6 @@ public class Aoc1 {
 
   private static void bruteForce(List<Integer> input) {
     int total = 2020;
-    for (int i : input) {
-      if (input.contains(total - i)) {
-        System.out.println(i * (total - i));
-        break;
-      }
-    }
-
     for (int i = 0; i < input.size(); i++) {
       for (int j = 1; j < input.size(); j++) {
         var val1 = input.get(i);
